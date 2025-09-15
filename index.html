@@ -182,7 +182,9 @@
                 if (!res.ok) throw new Error(`GitHub API Error: ${res.status}`);
                 const repos = await res.json();
                 
-                const toolPromises = repos.map(async repo => {
+                const filteredRepos = repos.filter(repo => repo.name.toLowerCase() !== 'myportfolio');
+
+                const toolPromises = filteredRepos.map(async repo => {
                     const tools = await fetchTools(repo);
                     return { ...repo, tools };
                 });
@@ -340,7 +342,4 @@
     </script>
 </body>
 </html>
-
-
-
 
