@@ -1,354 +1,54 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amine Esghir | Data Engineer & Cloud Specialist</title>
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231e40af'/%3E%3Cstop offset='1' stop-color='%232563eb'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='50' cy='50' r='50' fill='url(%23a)'/%3E%3Ctext x='50' y='55' font-size='50' font-weight='bold' text-anchor='middle' fill='white' font-family='Inter, sans-serif'%3EAE%3C/text%3E%3C/svg%3E">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <style>
-        body { font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
-        .glassmorphism { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
-        .gradient-text { background: linear-gradient(135deg, #06b6d4 0%, #22d3ee 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .project-card::before { content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(6, 182, 212, 0.2), transparent); transition: left 0.5s; }
-        .project-card:hover::before { left: 100%; }
-        .readme-content h1, .readme-content h2, .readme-content h3 { font-weight: bold; margin-top: 1.5rem; margin-bottom: 0.5rem; }
-        .readme-content h1 { font-size: 1.5em; border-bottom: 1px solid #334155; padding-bottom: 0.3em; }
-        .readme-content h2 { font-size: 1.25em; }
-        .readme-content a { color: #22d3ee; text-decoration: underline; }
-        .readme-content code { background-color: #1e293b; padding: 0.2em 0.4em; margin: 0; font-size: 85%; border-radius: 6px; }
-        .readme-content pre { background-color: #1e293b; padding: 1rem; border-radius: 8px; overflow-x: auto; margin-bottom: 1rem; }
-        .readme-content pre code { padding: 0; background-color: transparent; }
-        .readme-content blockquote { border-left: 4px solid #334155; padding-left: 1rem; color: #94a3b8; margin-bottom: 1rem; }
-        .fade-in-up { opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
-        .fade-in-up.is-visible { opacity: 1; transform: translateY(0); }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amine Esghir — Data Engineer & Palantir Foundry Developer</title>
+<meta name="description" content="I turn fragmented data into connected insights, interactive dashboards, and operational applications with Palantir Foundry. Explore the work of Amine Esghir.">
+<meta name="theme-color" content="#0b1115">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230b1115'/%3E%3Ctext x='32' y='41' text-anchor='middle' font-family='sans-serif' font-size='28' font-weight='700' fill='%2399f6cf'%3EAE%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b1115;--panel:#121c22;--panel2:#17252c;--ink:#eef3f0;--muted:#a4b2b7;--accent:#99f6cf;--line:#28373e;--blue:#93b9ee;--radius:24px;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;background:var(--bg);color:var(--ink);font-family:Manrope,Arial,sans-serif;font-size:16px;line-height:1.7}a{color:inherit;text-decoration:none}button{font:inherit;color:inherit;cursor:pointer}button,a{-webkit-tap-highlight-color:transparent}button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:6px}::selection{background:var(--accent);color:var(--bg)}h1,h2,h3,h4,p,figure{margin:0}h1,h2,h3,h4,.display{font-family:'Space Grotesk',Arial,sans-serif;letter-spacing:-.045em;line-height:1.1}img{max-width:100%;display:block}.wrap{width:min(1180px,calc(100% - 64px));margin-inline:auto}.skip{position:fixed;top:-100px;left:20px;z-index:100;background:var(--accent);color:var(--bg);padding:10px 20px}.skip:focus{top:10px}.eyebrow{font:600 11px/1.5 Manrope,Arial,sans-serif;text-transform:uppercase;letter-spacing:.18em;color:var(--accent)}.muted{color:var(--muted)}.accent{color:var(--accent)}.section{padding:110px 0;border-top:1px solid var(--line)}.section-top{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:45px}.section-top h2{font-size:clamp(34px,4.4vw,56px);margin-top:14px}.section-top>p{max-width:350px;font-size:14px;color:var(--muted)}.btn{display:inline-flex;gap:18px;align-items:center;justify-content:center;min-height:52px;padding:13px 23px;border-radius:100px;border:1px solid var(--line);font-size:13px;font-weight:700;transition:background .2s,transform .2s}.btn:hover{background:var(--panel2);transform:translateY(-2px)}.btn-primary{background:var(--accent);color:var(--bg);border-color:var(--accent)}.btn-primary:hover{background:#b7ffdf}.arrow{font-size:20px;line-height:1}.text-link{display:inline-flex;align-items:center;gap:12px;font-size:13px;font-weight:700;border-bottom:1px solid #4f6762;padding-bottom:4px}.text-link:hover{color:var(--accent)}
+header{position:sticky;top:0;z-index:50;background:rgba(11,17,21,.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--line)}.nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:30px}.brand{display:flex;align-items:center;gap:12px;font-size:12px;font-weight:800}.monogram{display:grid;place-items:center;width:40px;height:40px;background:var(--accent);border-radius:12px;color:var(--bg);font-family:'Space Grotesk',sans-serif;font-size:19px;letter-spacing:-1px}.brand small{display:block;color:var(--muted);font-size:9px;font-weight:500;letter-spacing:.1em}.nav-links{display:flex;align-items:center;gap:30px;font-size:12px;color:#c0ccce}.nav-links a:hover{color:var(--accent)}.nav-talk{border:1px solid var(--line);padding:9px 17px;border-radius:100px;color:var(--ink)}.menu-toggle{display:none;background:none;border:1px solid var(--line);border-radius:10px;padding:7px 12px}
+.hero{position:relative;padding:70px 0 50px;overflow:hidden}.hero:before{content:'';pointer-events:none;position:absolute;inset:0;background:radial-gradient(ellipse at 85% 20%,#17393255,transparent 55%);z-index:-1}.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:75px;align-items:center}.role{display:flex;align-items:center;gap:9px;font-size:11px;color:var(--muted);letter-spacing:.03em}.role:before{content:'';width:6px;height:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 18px #99f6cf88}.hero h1{font-size:clamp(48px,6.9vw,86px);font-weight:500;line-height:1.02;margin:26px 0}.hero h1 span{color:var(--accent)}.hero-description{font-size:15px;max-width:540px;color:var(--muted);line-height:1.9}.hero-description strong{color:#e1ebe6;font-weight:500}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.hero-byline{margin-top:28px;font-size:11px;color:var(--muted)}.hero-byline b{color:var(--ink);font-weight:600}.video-shell{position:relative;width:100%;max-width:330px}.video-shell:before{content:'';position:absolute;inset:40px -25px;border:1px solid #99f6cf18;border-radius:200px;transform:rotate(-12deg);z-index:-1}.video-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:10px;text-transform:uppercase;letter-spacing:.12em}.video-top span:first-child{color:var(--accent)}.video-frame{aspect-ratio:9/16;border:1px solid #4a6b60;border-radius:22px;overflow:hidden;background:#030708;box-shadow:0 28px 80px #0005}.video-frame iframe{width:100%;height:100%;border:0;display:block}.video-caption{display:flex;justify-content:space-between;gap:10px;margin-top:15px;font-size:10px;color:var(--muted)}.video-caption a{color:var(--accent);text-decoration:underline;text-underline-offset:4px}.expertise-strip{display:flex;align-items:center;justify-content:space-between;gap:22px;border-top:1px solid var(--line);padding-top:30px;margin-top:55px}.expertise-strip p{font-size:10px;color:var(--muted);max-width:130px;line-height:1.5}.expertise-strip span{font-family:'Space Grotesk',sans-serif;font-size:16px;color:#bdcbc8;letter-spacing:-.03em}
+.workflow-section{background:#0e171b}.workflow-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:55px;align-items:center}.workflow-copy h2{font-size:clamp(36px,4.5vw,56px);margin:15px 0 22px}.workflow-copy>p{font-size:14px;color:var(--muted);max-width:400px}.steps{margin-top:30px;display:grid;gap:8px}.step{display:flex;align-items:center;gap:16px;text-align:left;padding:14px 17px;border:1px solid transparent;border-radius:12px;background:transparent}.step>span{color:var(--muted);font-size:11px;font-family:monospace}.step strong{font-size:13px;font-weight:600;flex:1}.step em{font-size:17px;font-style:normal;opacity:0}.step[aria-selected=true]{background:#182a2a;border-color:#365c51}.step[aria-selected=true]>span,.step[aria-selected=true] em{color:var(--accent);opacity:1}.step:hover{background:#182326}.demo{min-width:0;background:var(--panel);border:1px solid #34474c;border-radius:20px;overflow:hidden;box-shadow:0 25px 70px #0003}.demo-bar{display:flex;align-items:center;justify-content:space-between;background:#18252b;border-bottom:1px solid var(--line);padding:15px 20px;font-size:10px;color:#a8bfbb}.dots{display:flex;gap:5px}.dots i{width:6px;height:6px;border-radius:50%;background:#4b5c63}.dots i:first-child{background:var(--accent)}.demo-body{padding:26px;min-height:405px}.demo-label{font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}.demo h3{font-size:25px;margin:9px 0 24px;letter-spacing:-.025em}.demo-note{padding:15px 24px;border-top:1px solid var(--line);color:var(--muted);font-size:10px}.source-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.source{padding:21px 17px;border:1px solid #33474f;border-radius:12px;background:#18272e}.source span{font-size:20px;color:var(--accent);display:block;margin-bottom:10px}.source b{font-size:12px;display:block}.source small{font-size:10px;color:var(--muted)}.pipeline-list{display:grid;gap:11px}.pipeline-row{display:flex;gap:12px;align-items:center;padding:17px;border:1px solid var(--line);border-radius:10px;background:#17272b;font-size:12px}.pipeline-row b{flex:1}.check{color:var(--accent)}.pipeline-row small{color:var(--muted);font-size:10px}.ontology{width:100%;height:280px}.ontology line{stroke:#476960;stroke-width:1.5}.ontology circle{fill:#173630;stroke:var(--accent);stroke-width:1}.ontology rect{fill:#1b2d36;stroke:#42606f;stroke-width:1}.ontology text{fill:var(--ink);font:11px Manrope,Arial,sans-serif;text-anchor:middle}.ontology .travel{fill:var(--accent);stroke:none}.dashboard-controls{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:18px}.filter-btn{font-size:10px;padding:6px 12px;border:1px solid var(--line);border-radius:100px;background:transparent}.filter-btn[aria-pressed=true]{background:var(--accent);color:var(--bg);border-color:var(--accent)}.kpi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.kpi{background:#1b2b31;padding:15px 10px;border-radius:10px}.kpi small{display:block;color:var(--muted);font-size:8px;letter-spacing:.05em}.kpi b{display:block;margin-top:6px;font:500 clamp(17px,2vw,27px) 'Space Grotesk',sans-serif;letter-spacing:-.04em}.chart{display:flex;align-items:end;gap:9px;height:135px;margin-top:25px;border-bottom:1px solid #45645e;padding:0 12px}.bar{flex:1;background:#476b80;border-radius:5px 5px 0 0;transition:height .5s}.bar:nth-child(6){background:var(--accent)}.chart-label{display:flex;justify-content:space-around;font-size:8px;color:var(--muted);margin-top:8px}.asset-detail{margin-top:20px}.detail-row{display:flex;justify-content:space-between;gap:15px;border-bottom:1px solid var(--line);padding:10px 0;font-size:11px}.detail-row span{color:var(--muted)}[hidden]{display:none!important}
+.solutions-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.solution{border:1px solid var(--line);border-radius:var(--radius);padding:32px;background:linear-gradient(140deg,#162329,#101a1f);position:relative;overflow:hidden}.solution .number{font:500 12px 'Space Grotesk',sans-serif;color:var(--accent)}.solution h3{font-size:26px;margin:50px 0 16px;letter-spacing:-.035em}.solution p{font-size:13px;color:var(--muted);line-height:1.85}.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:24px}.tags span{font-size:9px;border:1px solid #35464c;padding:4px 9px;border-radius:100px;color:#bdcfc8}.solution:after{content:'↗';position:absolute;right:30px;top:25px;font-size:24px;color:#506a63}
+.work-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:22px}.featured-work{grid-row:span 2;border:1px solid #456458;background:#172a26;border-radius:var(--radius);padding:35px;display:flex;flex-direction:column;justify-content:space-between;min-height:510px}.featured-work h3{font-size:38px;margin:25px 0 18px}.featured-work p{font-size:13px;line-height:1.9;color:#b1c3bc}.work-type{font-size:9px;color:var(--accent);letter-spacing:.14em;text-transform:uppercase}.work-card{padding:29px;border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);transition:border-color .2s,transform .2s}.work-card:hover{border-color:#62877a;transform:translateY(-3px)}.work-card h3{font-size:25px;margin:15px 0 12px}.work-card p{font-size:12px;color:var(--muted);line-height:1.8}.work-card .card-bottom{display:flex;justify-content:space-between;align-items:center;margin-top:20px;font-size:10px;color:var(--accent)}.work-graphic{height:155px;margin:25px 0;position:relative;display:flex;align-items:center;justify-content:center;gap:8px}.work-graphic div{height:75px;width:75px;border:1px solid #517b69;border-radius:15px;display:grid;place-items:center;font-size:9px;background:#1c3930;transform:rotate(-6deg)}.work-graphic div:nth-child(3){transform:rotate(0);height:98px;width:98px;background:var(--accent);color:var(--bg);font-size:12px;font-weight:700}.work-graphic span{color:var(--accent)}
+.about-grid{display:grid;grid-template-columns:300px 1fr;gap:70px;align-items:center}.portrait-frame{position:relative;border-radius:24px;overflow:hidden;aspect-ratio:1/1.12;background:var(--panel)}.portrait-frame img{width:100%;height:100%;object-fit:cover;filter:saturate(.7)}.portrait-frame:after{content:'AMINE ESGHIR / MOROCCO';position:absolute;left:20px;bottom:16px;font-size:9px;letter-spacing:.13em;background:#0b1115c9;padding:7px 10px;border-radius:5px}.about-copy h2{font-size:45px;margin:15px 0 22px}.about-copy p{font-size:14px;color:var(--muted);margin-bottom:16px;max-width:660px}.stats{display:flex;gap:45px;flex-wrap:wrap;margin-top:30px;padding-top:25px;border-top:1px solid var(--line)}.stat b{display:block;font:500 37px 'Space Grotesk',sans-serif;color:var(--accent);letter-spacing:-.05em}.stat span{font-size:10px;color:var(--muted)}.stack{display:flex;flex-wrap:wrap;gap:10px;margin-top:38px}.stack span{border:1px solid var(--line);border-radius:9px;padding:8px 13px;font-size:11px;color:#b6c6c4}.contact{position:relative;padding:85px;border:1px solid #3b6856;border-radius:30px;background:radial-gradient(ellipse at 90% 20%,#2c514077,transparent 65%),#14251f}.contact h2{font-size:clamp(36px,5.6vw,68px);max-width:720px;margin:20px 0 30px}.contact p{color:#b2c5bc;font-size:14px;margin-bottom:28px;max-width:560px}.contact-bottom{display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap}.socials{display:flex;gap:22px;font-size:12px;color:#c7ddd2}footer{display:flex;justify-content:space-between;gap:20px;padding:35px 0;color:var(--muted);font-size:10px}
+@media(min-width:1500px){.hero{padding-top:90px}.hero-grid{gap:100px}}@media(max-width:1000px){.hero-grid{gap:35px;grid-template-columns:minmax(0,1fr) 290px}.hero h1{font-size:64px}.workflow-grid{gap:30px}.demo-body{padding:20px}.solution{padding:25px}.about-grid{gap:40px;grid-template-columns:250px 1fr}.contact{padding:55px}}@media(max-width:760px){.wrap{width:calc(100% - 40px)}.nav{height:70px}.menu-toggle{display:block;font-size:12px}.nav-links{display:none;position:absolute;top:70px;left:0;right:0;padding:20px;background:#101c21;border-bottom:1px solid var(--line);gap:20px;align-items:stretch}.nav-links.open{display:flex;flex-direction:column}.nav-talk{text-align:center}.hero{padding-top:40px}.hero-grid{grid-template-columns:1fr;gap:45px}.hero h1{font-size:clamp(46px,9.4vw,70px);max-width:600px}.hero-description{font-size:14px}.video-shell{justify-self:center;max-width:300px}.expertise-strip{justify-content:flex-start;flex-wrap:wrap;margin-top:40px;gap:18px 25px}.expertise-strip p{max-width:none;flex-basis:100%}.expertise-strip span{font-size:13px}.section{padding:70px 0}.section-top{display:block}.section-top>p{margin-top:20px;max-width:500px}.workflow-grid,.work-grid,.about-grid{grid-template-columns:1fr}.workflow-copy>p{max-width:100%}.steps{grid-template-columns:1fr 1fr}.step{padding:12px 9px;gap:8px}.step strong{font-size:11px}.step em{display:none}.demo-body{min-height:400px}.solutions-grid{grid-template-columns:1fr}.solution h3{margin-top:30px}.solution{padding:30px}.featured-work{min-height:450px;padding:30px}.about-grid{gap:30px}.portrait-frame{max-width:280px}.about-copy h2{font-size:36px}.stats{gap:30px}.stat b{font-size:33px}.contact{padding:35px 25px}.contact .btn{font-size:12px;max-width:100%;overflow-wrap:anywhere}.socials{gap:20px}footer{flex-wrap:wrap}.brand small{font-size:8px}.hero-actions .btn{font-size:12px;padding:12px 18px}.section-top h2{font-size:38px}.featured-work h3{font-size:32px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
+</style>
 </head>
-<body class="bg-slate-900 text-gray-200">
-    <header class="glassmorphism fixed w-full top-0 z-50 border-b border-gray-800/50">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold gradient-text">AE</a>
-            <nav class="hidden md:flex space-x-8">
-                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
-                <a href="#projects" class="hover:text-cyan-400 transition-colors">Projects</a>
-                <a href="#skills" class="hover:text-cyan-400 transition-colors">Skills</a>
-                <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
-            </nav>
-            <button id="mobile-menu-button" class="md:hidden"><i data-lucide="menu"></i></button>
-        </div>
-        <div id="mobile-menu" class="hidden md:hidden glassmorphism">
-            <a href="#about" class="block py-2 px-6 hover:bg-slate-700/50">About</a>
-            <a href="#projects" class="block py-2 px-6 hover:bg-slate-700/50">Projects</a>
-            <a href="#skills" class="block py-2 px-6 hover:bg-slate-700/50">Skills</a>
-            <a href="#contact" class="block py-2 px-6 hover:bg-slate-700/50">Contact</a>
-        </div>
-    </header>
-
-    <main class="container mx-auto px-6 pt-24 relative z-10">
-        <section id="home" class="min-h-screen flex items-center">
-            <div>
-                <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-4">Amine Esghir<span class="text-cyan-400">.</span></h1>
-                <h2 class="text-3xl md:text-5xl font-bold text-gray-400 mb-6">I build <span class="gradient-text">data pipelines</span> that power decisions.</h2>
-                <p class="text-lg text-gray-400 max-w-2xl">A Data Engineer transforming complex data into strategic assets by building scalable pipelines and robust cloud-based data solutions.</p>
-                <div class="mt-10 flex flex-wrap gap-4">
-                    <a href="https://github.com/esghir" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-lg glassmorphism border border-cyan-500/50 hover:border-cyan-400 transition-colors flex items-center gap-2"><i data-lucide="github"></i>GitHub</a>
-                    <a href="https://linkedin.com/in/esghir-amine" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-lg glassmorphism border border-cyan-500/50 hover:border-cyan-400 transition-colors flex items-center gap-2"><i data-lucide="linkedin"></i>LinkedIn</a>
-                    <a href="#contact" class="px-6 py-3 rounded-lg bg-cyan-500 hover:bg-cyan-600 text-white flex items-center gap-2 transition-colors"><i data-lucide="mail"></i>Get in Touch</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="about" class="py-20 fade-in-up">
-            <h3 class="text-3xl font-bold text-white text-center mb-12"><span class="text-cyan-400">01.</span> About Me</h3>
-            <div class="flex flex-col md:flex-row items-center gap-12">
-                <div class="w-full md:w-1/3 flex justify-center">
-                    <div class="w-64 h-64 rounded-full overflow-hidden glassmorphism p-2">
-                        <img src="./img/amin.jpg" alt="Amine Esghir" class="w-full h-full object-cover rounded-full">
-                    </div>
-                </div>
-                <div class="w-full md:w-2/3">
-                    <p class="text-gray-400 mb-4">Hello! I'm Amine, a Data Engineer based in Rabat-Salé-Kénitra, Morocco. I'm a passionate professional with a Master's degree in Electronic and Embedded Systems. My enthusiasm for cloud computing and DevOps drives me to stay on top of the latest industry trends.</p>
-                    <p class="text-gray-400">I am dedicated to delivering high-caliber work and fostering collaborative relationships. With a strong analytical mindset and problem-solving abilities, I thrive in challenging situations and excel in delivering innovative solutions that drive tangible results.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects" class="py-20 fade-in-up">
-            <h3 class="text-3xl font-bold text-white text-center mb-12"><span class="text-cyan-400">02.</span> My Projects</h3>
-            <div class="relative max-w-4xl mx-auto">
-                <div class="overflow-hidden">
-                    <div id="project-grid" class="flex transition-transform duration-500 ease-in-out">
-                        <!-- Project slides will be dynamically inserted here -->
-                    </div>
-                </div>
-                <button id="prev-project" class="absolute top-1/2 -left-4 md:-left-12 transform -translate-y-1/2 bg-slate-800/50 p-2 rounded-full hover:bg-slate-700/70 transition-colors items-center justify-center z-10 hidden">
-                    <i data-lucide="chevron-left" class="w-6 h-6 text-cyan-400"></i>
-                </button>
-                <button id="next-project" class="absolute top-1/2 -right-4 md:-right-12 transform -translate-y-1/2 bg-slate-800/50 p-2 rounded-full hover:bg-slate-700/70 transition-colors items-center justify-center z-10 hidden">
-                    <i data-lucide="chevron-right" class="w-6 h-6 text-cyan-400"></i>
-                </button>
-            </div>
-        </section>
-        
-        <section id="skills" class="py-20 fade-in-up">
-            <h3 class="text-3xl font-bold text-white text-center mb-12"><span class="text-cyan-400">03.</span> My Tech Stack</h3>
-            <div id="skills-grid" class="max-w-4xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 text-center"></div>
-        </section>
-
-        <section id="contact" class="py-20 text-center fade-in-up">
-             <h3 class="text-3xl font-bold text-white mb-4"><span class="text-cyan-400">04.</span> Get In Touch</h3>
-            <p class="max-w-lg mx-auto text-gray-400 mb-8">I'm currently open to new opportunities and collaborations. Whether you have a question or just want to say hi, my inbox is always open. I'll do my best to get back to you!</p>
-            <a href="mailto:esghir.amine.97@gmail.com" class="inline-block bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-3 px-8 rounded-lg transition-transform transform hover:scale-105 duration-300">Say Hello</a>
-        </section>
-    </main>
-
-    <div id="project-modal" class="hidden fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4">
-        <div class="bg-slate-800 rounded-lg shadow-2xl max-w-3xl w-full max-h-[90vh] flex flex-col glassmorphism">
-            <div class="flex justify-between items-center p-4 border-b border-slate-700/50">
-                <h4 id="modal-title" class="text-2xl font-bold text-white"></h4>
-                <button id="close-modal" class="text-gray-400 hover:text-cyan-400"><i data-lucide="x"></i></button>
-            </div>
-            <div id="modal-content" class="p-6 overflow-y-auto readme-content"></div>
-        </div>
-    </div>
-
-    <footer class="border-t border-gray-800/50 py-6 text-center text-gray-500">
-        <div class="flex justify-center gap-6 mb-4">
-            <a href="https://github.com/esghir" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-400"><i data-lucide="github"></i></a>
-            <a href="https://linkedin.com/in/esghir-amine" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-400"><i data-lucide="linkedin"></i></a>
-        </div>
-        <p>&copy; 2025 Amine Esghir. Built with passion and code.</p>
-    </footer>
-
-    <!-- Scroll to Top Button -->
-    <button id="scroll-to-top" class="hidden fixed bottom-6 right-6 bg-cyan-500/50 hover:bg-cyan-500 text-white p-3 rounded-full transition-all duration-300 z-50 focus:outline-none">
-        <i data-lucide="arrow-up" class="w-6 h-6"></i>
-    </button>
-
-    <script>
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const projectModal = document.getElementById('project-modal');
-        const modalTitle = document.getElementById('modal-title');
-        const modalContent = document.getElementById('modal-content');
-        const closeModalButton = document.getElementById('close-modal');
-        const GITHUB_USER = "esghir";
-        const scrollToTopButton = document.getElementById('scroll-to-top');
-        
-        const skills = ["Python","PySpark","SQL","AWS","Foundry Palantir","Kafka","Databricks","Docker","Kubernetes","Git","Terraform","Snowflake","TypeScript","DBT","Airflow","Java"];
-        const skillIcons = { python:"brain-circuit", pyspark:"zap", sql:"database", aws:"cloud", "foundry palantir":"layout-grid", kafka:"workflow", databricks:"sparkles", docker:"box", kubernetes:"boxes", git:"git-branch", terraform:"layers", snowflake:"database", typescript:"file-type", dbt:"wrench", airflow:"wind", java:"coffee" };
-
-        function renderSkills() {
-            const grid = document.getElementById("skills-grid");
-            if (!grid) return;
-            skills.forEach(skillName => {
-                const div = document.createElement("div");
-                const iconName = skillIcons[skillName.toLowerCase()] || "code-2";
-                div.className = "glassmorphism p-4 rounded-lg text-center transition-transform transform hover:scale-110";
-                div.innerHTML = `<div class="flex justify-center items-center mb-2"><i data-lucide="${iconName}" class="w-8 h-8 text-cyan-400"></i></div><span>${skillName}</span>`;
-                grid.appendChild(div);
-            });
-        }
-        
-        let allProjects = [], currentSlideIndex = 0, totalSlides = 0;
-        const projectGrid = document.getElementById("project-grid");
-        const prevButton = document.getElementById("prev-project");
-        const nextButton = document.getElementById("next-project");
-
-        async function fetchTools(repo) {
-            const filenames = ['tools.txt', 'tool.txt', 'tools', 'tool'];
-            const branches = ['main', 'master'];
-            for (const branch of branches) {
-                for (const filename of filenames) {
-                    try {
-                        const url = `https://raw.githubusercontent.com/${repo.full_name}/${branch}/${filename}`;
-                        const res = await fetch(url);
-                        if (res.ok) {
-                            const text = await res.text();
-                            return text.split(/, |\n/).map(t => t.trim()).filter(Boolean); 
-                        }
-                    } catch (e) { /* Ignore fetch errors and continue */ }
-                }
-            }
-            return [];
-        }
-
-        async function loadProjects() {
-            if (!projectGrid) return;
-            try {
-                const res = await fetch(`https://api.github.com/users/${GITHUB_USER}/repos?sort=updated&per_page=100`);
-                if (!res.ok) throw new Error(`GitHub API Error: ${res.status}`);
-                const repos = await res.json();
-                
-                const filteredRepos = repos.filter(repo => repo.name.toLowerCase() !== 'myportfolio');
-
-                const toolPromises = filteredRepos.map(async repo => {
-                    const tools = await fetchTools(repo);
-                    return { ...repo, tools };
-                });
-
-                allProjects = await Promise.all(toolPromises);
-
-                if (allProjects.length > 0) {
-                    setupProjectSlider();
-                } else {
-                    projectGrid.innerHTML = `<p class="text-center w-full">No public projects found.</p>`;
-                }
-            } catch (error) {
-                console.error("Failed to load projects:", error);
-                projectGrid.innerHTML = `<p class="text-center w-full text-red-400">Could not load projects from GitHub.</p>`;
-            }
-        }
-
-        function setupProjectSlider() {
-            if (allProjects.length === 0) return;
-            renderProjectSlides();
-            totalSlides = Math.ceil(allProjects.length / 4);
-            updateSlider();
-            updateArrowVisibility();
-            prevButton.addEventListener("click", () => slide(-1));
-            nextButton.addEventListener("click", () => slide(1));
-        }
-        
-        function renderProjectSlides() {
-            projectGrid.innerHTML = '';
-            const projectsPerSlide = 4;
-
-            for (let i = 0; i < allProjects.length; i += projectsPerSlide) {
-                const slideChunk = allProjects.slice(i, i + projectsPerSlide);
-                const slideContainer = document.createElement('div');
-                slideContainer.className = "w-full flex-shrink-0 grid grid-cols-1 md:grid-cols-2 gap-8";
-
-                slideChunk.forEach(repo => {
-                    const card = document.createElement("div");
-                    card.className = "project-card glassmorphism p-6 rounded-lg cursor-pointer relative overflow-hidden h-48 flex flex-col";
-                    
-                    let toolsSectionHTML = '';
-                    if (repo.tools && repo.tools.length > 0) {
-                        const toolsTags = repo.tools.slice(0, 4).map(tool => `<span class="bg-cyan-900/50 text-cyan-300 text-xs font-medium px-2.5 py-0.5 rounded-full">${tool}</span>`).join('');
-                        toolsSectionHTML = `
-                            <div class="mt-auto pt-3">
-                                <hr class="border-slate-700/50 mb-3">
-                                <div class="flex flex-wrap gap-2 items-center">
-                                    <h5 class="text-sm font-semibold text-gray-400 mr-1">Tools:</h5>
-                                    ${toolsTags}
-                                </div>
-                            </div>
-                        `;
-                    }
-
-                    card.innerHTML = `
-                        <div class="flex-grow">
-                            <div class="flex justify-between items-start">
-                                <h4 class="text-xl font-bold mb-2 text-white truncate pr-4">${repo.name}</h4>
-                                <a href="${repo.html_url}" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-cyan-400 flex-shrink-0" onclick="event.stopPropagation()">
-                                    <i data-lucide="github"></i>
-                                </a>
-                            </div>
-                            <p class="text-gray-400 text-sm overflow-hidden text-ellipsis" style="max-height: 2.5rem; line-height: 1.25rem;">${repo.description || "No description provided."}</p>
-                        </div>
-                        ${toolsSectionHTML}
-                    `;
-                    card.addEventListener("click", () => openModal(repo));
-                    slideContainer.appendChild(card);
-                });
-                projectGrid.appendChild(slideContainer);
-            }
-             if (typeof lucide !== 'undefined') {
-                lucide.createIcons();
-            }
-        }
-
-        function slide(direction) {
-            const newIndex = currentSlideIndex + direction;
-            if (newIndex >= 0 && newIndex < totalSlides) {
-                currentSlideIndex = newIndex;
-                updateSlider();
-                updateArrowVisibility();
-            }
-        }
-
-        function updateSlider() {
-            const offset = currentSlideIndex * 100;
-            projectGrid.style.transform = `translateX(-${offset}%)`;
-        }
-        
-        function updateArrowVisibility() {
-            prevButton.style.display = currentSlideIndex > 0 ? 'flex' : 'none';
-            nextButton.style.display = currentSlideIndex < totalSlides - 1 ? 'flex' : 'none';
-        }
-
-        async function openModal(repo) {
-            modalTitle.textContent = repo.name;
-            modalContent.innerHTML = `<p>Loading README...</p>`;
-            projectModal.classList.remove('hidden');
-            try {
-                const readmeUrl = `https://raw.githubusercontent.com/${repo.full_name}/main/README.md`;
-                const res = await fetch(readmeUrl);
-                 if (!res.ok) { // Check for master as fallback
-                    const masterRes = await fetch(`https://raw.githubusercontent.com/${repo.full_name}/master/README.md`);
-                    if (!masterRes.ok) throw new Error('README not found in main or master branch');
-                    const markdown = await masterRes.text();
-                    modalContent.innerHTML = marked.parse(markdown);
-                    return;
-                }
-                const markdown = await res.text();
-                modalContent.innerHTML = marked.parse(markdown);
-            } catch (error) {
-                modalContent.innerHTML = `<p class="text-red-400">README not available for this project.</p>`;
-            } finally {
-                if (typeof lucide !== 'undefined') lucide.createIcons();
-            }
-        }
-
-        function closeModal() { projectModal.classList.add('hidden'); }
-        
-        function setupScrollAnimations() {
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('is-visible');
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, { threshold: 0.1 });
-            document.querySelectorAll('.fade-in-up').forEach(el => observer.observe(el));
-        }
-
-        mobileMenuButton.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
-        document.querySelectorAll('#mobile-menu a').forEach(link => link.addEventListener('click', () => mobileMenu.classList.add('hidden')));
-        closeModalButton.addEventListener('click', closeModal);
-        projectModal.addEventListener('click', e => { if (e.target === projectModal) closeModal(); });
-
-        // Scroll to top logic
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 300) {
-                scrollToTopButton.classList.remove('hidden');
-            } else {
-                scrollToTopButton.classList.add('hidden');
-            }
-        });
-
-        scrollToTopButton.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-
-        document.addEventListener("DOMContentLoaded", () => {
-            renderSkills();
-            loadProjects();
-            setupScrollAnimations();
-            if (typeof lucide !== 'undefined') {
-                lucide.createIcons();
-                setTimeout(() => lucide.createIcons(), 100);
-            }
-        });
-    </script>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header><div class="wrap nav"><a class="brand" href="#home" aria-label="Amine Esghir, home"><span class="monogram">AE</span><span>AMINE ESGHIR<small>DATA ENGINEER & FOUNDRY DEVELOPER</small></span></a><button class="menu-toggle" id="menu-toggle" aria-label="Open navigation" aria-controls="nav-links" aria-expanded="false">Menu ☰</button><nav class="nav-links" id="nav-links" aria-label="Main navigation"><a href="#solutions">Solutions</a><a href="#work">Selected work</a><a href="#about">About me</a><a href="#contact" class="nav-talk">Let’s talk ↗</a></nav></div></header>
+<main id="main">
+<section class="hero" id="home"><div class="wrap"><div class="hero-grid"><div><p class="role">Data Engineer · Palantir Foundry Developer</p><h1>Your data.<br>Connected.<br><span>Put to work.</span></h1><p class="hero-description">I’m Amine. I turn fragmented data into <strong>interactive dashboards and operational applications</strong> with Palantir Foundry, helping teams move from scattered information to informed action.</p><div class="hero-actions"><a class="btn btn-primary" href="#contact">Let’s solve your data challenge <span class="arrow" aria-hidden="true">↗</span></a><a class="btn" href="#workflow">Explore my approach <span aria-hidden="true">↓</span></a></div><p class="hero-byline"><b>Engineering the full journey.</b> From the first data source to the final user experience.</p></div><figure class="video-shell" id="introduction"><div class="video-top"><span>Meet your data engineer</span><span>▶ Introduction</span></div><div class="video-frame"><iframe src="https://www.youtube-nocookie.com/embed/aEAi_rHepHg?playsinline=1&amp;rel=0" title="Amine Esghir — Palantir Foundry and data solutions introduction" width="330" height="587" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="encrypted-media; picture-in-picture; fullscreen; web-share" allowfullscreen></iframe></div><figcaption class="video-caption"><span>From fragmented data to useful insights.</span><a href="https://www.youtube.com/shorts/aEAi_rHepHg" target="_blank" rel="noopener noreferrer">YouTube ↗</a></figcaption></figure></div><div class="expertise-strip" aria-label="Core technologies"><p>THE TOOLS BEHIND<br>THE SOLUTIONS</p><span>Palantir Foundry</span><span>PySpark</span><span>Python / SQL</span><span>Snowflake</span><span>AWS</span></div></div></section>
+<section class="section workflow-section" id="workflow"><div class="wrap workflow-grid"><div class="workflow-copy"><p class="eyebrow">01 / From complexity to clarity</p><h2>A pipeline is only<br>the beginning.</h2><p>Data becomes useful when people can understand it and act on it. Explore how I connect the engineering to the experience.</p><div class="steps" role="tablist" aria-label="Explore the data workflow"><button class="step" role="tab" id="tab-connect" aria-selected="true" aria-controls="panel-connect" data-step="connect"><span>01</span><strong>Connect the sources</strong><em>↗</em></button><button class="step" role="tab" id="tab-prepare" aria-selected="false" aria-controls="panel-prepare" data-step="prepare" tabindex="-1"><span>02</span><strong>Build reliable pipelines</strong><em>↗</em></button><button class="step" role="tab" id="tab-model" aria-selected="false" aria-controls="panel-model" data-step="model" tabindex="-1"><span>03</span><strong>Model the business</strong><em>↗</em></button><button class="step" role="tab" id="tab-explore" aria-selected="false" aria-controls="panel-explore" data-step="explore" tabindex="-1"><span>04</span><strong>Explore & take action</strong><em>↗</em></button></div></div><div class="demo"><div class="demo-bar"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span><span>THE DATA → ACTION WORKFLOW</span><span>AE / LAB</span></div><div class="demo-body"><div role="tabpanel" id="panel-connect" aria-labelledby="tab-connect"><p class="demo-label">Start with what you have</p><h3>Different sources. One foundation.</h3><div class="source-grid"><div class="source"><span aria-hidden="true">▦</span><b>Spreadsheets</b><small>Files & business reports</small></div><div class="source"><span aria-hidden="true">◫</span><b>Cloud storage</b><small>AWS S3 & Blob storage</small></div><div class="source"><span aria-hidden="true">⛁</span><b>Databases</b><small>Snowflake & PostgreSQL</small></div><div class="source"><span aria-hidden="true">⟷</span><b>APIs & streams</b><small>Events & external data</small></div></div></div><div role="tabpanel" id="panel-prepare" aria-labelledby="tab-prepare" hidden><p class="demo-label">Make the data dependable</p><h3>Designed for the next step.</h3><div class="pipeline-list"><div class="pipeline-row"><span class="check">✓</span><b>Ingest & standardize</b><small>Python / PySpark</small></div><div class="pipeline-row"><span class="check">✓</span><b>Join & transform</b><small>SQL / PySpark</small></div><div class="pipeline-row"><span class="check">✓</span><b>Validate & monitor</b><small>Data quality</small></div><div class="pipeline-row"><span class="check">✓</span><b>Schedule & deliver</b><small>Foundry pipelines</small></div></div></div><div role="tabpanel" id="panel-model" aria-labelledby="tab-model" hidden><p class="demo-label">Add context through the Ontology</p><h3>Data that speaks your language.</h3><svg class="ontology" viewBox="0 0 460 280" role="img" aria-label="An illustrative Ontology connects assets, locations, costs, and operations"><line x1="230" y1="140" x2="85" y2="60"/><line x1="230" y1="140" x2="375" y2="60"/><line x1="230" y1="140" x2="85" y2="225"/><line x1="230" y1="140" x2="375" y2="225"/><rect x="25" y="33" width="120" height="54" rx="13"/><rect x="315" y="33" width="120" height="54" rx="13"/><rect x="25" y="198" width="120" height="54" rx="13"/><rect x="315" y="198" width="120" height="54" rx="13"/><circle cx="230" cy="140" r="60"/><text x="85" y="65">Assets</text><text x="375" y="65">Locations</text><text x="85" y="230">Costs</text><text x="375" y="230">Operations</text><text x="230" y="138">FOUNDRY</text><text x="230" y="156">ONTOLOGY</text><circle class="travel" r="3"><animateMotion dur="3s" repeatCount="indefinite" path="M85,60 L230,140 L375,225"/></circle></svg></div><div role="tabpanel" id="panel-explore" aria-labelledby="tab-explore" hidden><p class="demo-label">Interactive concept / Synthetic data</p><h3>Go from overview to detail.</h3><div class="dashboard-controls" role="group" aria-label="Dashboard view"><button class="filter-btn" data-view="all" aria-pressed="true">All regions</button><button class="filter-btn" data-view="europe" aria-pressed="false">Europe</button><button class="filter-btn" data-view="asset" aria-pressed="false">Asset details ↗</button></div><div class="kpi-grid" aria-live="polite" aria-atomic="true"><div class="kpi"><small>COST TRACKED</small><b id="kpi-cost">€8.6M</b></div><div class="kpi"><small>ACTIVE ASSETS</small><b id="kpi-assets">412</b></div><div class="kpi"><small>DATA HEALTH</small><b>98.4%</b></div></div><div id="chart-view"><div class="chart" role="img" aria-label="Illustrative monthly costs for all regions" id="cost-chart"><div class="bar" style="height:48%"></div><div class="bar" style="height:62%"></div><div class="bar" style="height:55%"></div><div class="bar" style="height:79%"></div><div class="bar" style="height:65%"></div><div class="bar" style="height:88%"></div><div class="bar" style="height:71%"></div><div class="bar" style="height:85%"></div></div><div class="chart-label" aria-hidden="true"><span>JAN</span><span>FEB</span><span>MAR</span><span>APR</span><span>MAY</span><span>JUN</span><span>JUL</span><span>AUG</span></div></div><div class="asset-detail" id="asset-view" hidden><div class="detail-row"><span>Asset</span><b>Unit 024</b></div><div class="detail-row"><span>Location</span><b>Europe</b></div><div class="detail-row"><span>Cost driver</span><b>Maintenance</b></div><div class="detail-row"><span>Status</span><b class="accent">Ready for review</b></div></div></div></div><div class="demo-note">An interactive illustration of my approach. Demonstration data, not a client system.</div></div></div></section>
+<section class="section" id="solutions"><div class="wrap"><div class="section-top"><div><p class="eyebrow">02 / What I can build for you</p><h2>Less friction.<br>More useful data.</h2></div><p>From the underlying pipelines to the interface your team uses every day.</p></div><div class="solutions-grid"><article class="solution"><span class="number">01 / ENGINEERING</span><h3>Bring your<br>data together.</h3><p>Connect scattered sources, transform complex datasets, and build reliable pipelines that give your analytics a dependable foundation.</p><div class="tags"><span>PySpark</span><span>Python</span><span>SQL</span><span>Data integration</span></div></article><article class="solution"><span class="number">02 / EXPERIENCE</span><h3>Make insights<br>easy to explore.</h3><p>Turn business questions into interactive dashboards. Filter the view, drill into a KPI, and understand the detail behind the number.</p><div class="tags"><span>Workshop</span><span>Slate</span><span>TypeScript</span><span>Dashboards</span></div></article><article class="solution"><span class="number">03 / OPERATIONS</span><h3>Put intelligence<br>into the workflow.</h3><p>Model your business with the Ontology and create applications, actions, and AIP workflows that help people use data in their daily work.</p><div class="tags"><span>Ontology</span><span>Foundry AIP</span><span>Operational apps</span></div></article></div></div></section>
+<section class="section" id="work"><div class="wrap"><div class="section-top"><div><p class="eyebrow">03 / Selected work</p><h2>Built around<br>real use cases.</h2></div><a class="text-link" href="https://github.com/esghir" target="_blank" rel="noopener noreferrer">Explore my GitHub <span aria-hidden="true">↗</span></a></div><div class="work-grid"><article class="featured-work"><div><p class="work-type">Professional experience / Palantir Foundry</p><h3>Turning enterprise data<br>into everyday tools.</h3><p>My work spans fleet operations and cost engineering: connecting source systems through the Ontology, building PySpark pipelines, and delivering Workshop and Slate applications for global teams.</p><div class="work-graphic" aria-hidden="true"><div>DATA</div><span>→</span><div>ONTOLOGY</div><span>→</span><div>ACTION</div></div></div><div><div class="tags"><span>Ontology</span><span>Workshop</span><span>Slate</span><span>AIP</span></div><a class="text-link" href="#contact" style="margin-top:25px">Talk about your use case <span aria-hidden="true">↗</span></a></div></article><a class="work-card" href="https://github.com/esghir/Real_Time_User_Data_Streaming_Analytics_Pipeline" target="_blank" rel="noopener noreferrer"><p class="work-type">Open source / Streaming</p><h3>Real-time user analytics.</h3><p>An API-to-database streaming pipeline: orchestrated with Airflow, streamed through Kafka, processed with PySpark, and stored in Cassandra.</p><div class="card-bottom"><span>Kafka · PySpark · Cassandra · Docker</span><span aria-hidden="true">↗</span></div></a><a class="work-card" href="https://github.com/esghir/data_pipeline_dbt" target="_blank" rel="noopener noreferrer"><p class="work-type">Open source / Analytics</p><h3>Weather data, made useful.</h3><p>An automated ELT workflow from weather API ingestion to analytics-ready dbt models and interactive Superset dashboards.</p><div class="card-bottom"><span>Airflow · PostgreSQL · dbt · Superset</span><span aria-hidden="true">↗</span></div></a></div></div></section>
+<section class="section" id="about"><div class="wrap"><div class="about-grid"><div class="portrait-frame"><img src="./img/amin.jpg" width="300" height="336" loading="lazy" alt="Amine Esghir, Data Engineer and Palantir Foundry Developer"></div><div class="about-copy"><p class="eyebrow">04 / The person behind the pipelines</p><h2>Hi, I’m Amine.</h2><p>I’m a Data Engineer based in Morocco, with 4+ years of experience building enterprise data platforms and operational applications. My background in electronic and embedded systems shaped how I approach a problem: understand the whole system, then build something people can rely on.</p><p>At AVL and SEGULA Technologies, I’ve worked across data integration, distributed processing, and user-facing Foundry applications. I enjoy closing the gap between what the data team builds and what the business needs.</p><div class="stats"><div class="stat"><b>4+</b><span>years of engineering experience</span></div><div class="stat"><b>5,000+</b><span>global technicians supported by my applications</span></div></div></div></div><div class="stack" aria-label="Technical skills"><span>Palantir Foundry</span><span>Ontology</span><span>Workshop</span><span>Slate</span><span>AIP</span><span>PySpark</span><span>Python</span><span>SQL</span><span>Snowflake</span><span>AWS</span><span>TypeScript</span><span>Docker</span><span>Airflow</span></div></div></section>
+<section class="section" id="contact"><div class="wrap"><div class="contact"><p class="eyebrow">05 / Let’s connect the dots</p><h2>What could your team do<br>with better-connected data?</h2><p>Tell me where your data is scattered, what’s taking too long, or which question your dashboard should answer. Let’s explore a practical solution.</p><div class="contact-bottom"><a class="btn btn-primary" href="mailto:esghir.amine.97@gmail.com">Start a conversation <span class="arrow" aria-hidden="true">↗</span></a><div class="socials"><a class="text-link" href="https://linkedin.com/in/esghir-amine" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a class="text-link" href="https://github.com/esghir" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div></div></div></section>
+</main>
+<div class="wrap"><footer><p>© <span id="year">2026</span> Amine Esghir. Built with purpose.</p><a href="#home">Back to the top ↑</a><p>Morocco · Engineering data into action.</p></footer></div>
+<script>
+const menuToggle=document.getElementById('menu-toggle');
+const navLinks=document.getElementById('nav-links');
+function closeMenu(){navLinks.classList.remove('open');menuToggle.setAttribute('aria-expanded','false');menuToggle.setAttribute('aria-label','Open navigation');}
+menuToggle.addEventListener('click',()=>{const open=menuToggle.getAttribute('aria-expanded')!=='true';navLinks.classList.toggle('open',open);menuToggle.setAttribute('aria-expanded',String(open));menuToggle.setAttribute('aria-label',open?'Close navigation':'Open navigation');});
+navLinks.querySelectorAll('a').forEach(link=>link.addEventListener('click',closeMenu));
+document.addEventListener('keydown',event=>{if(event.key==='Escape'&&menuToggle.getAttribute('aria-expanded')==='true'){closeMenu();menuToggle.focus();}});
+const tabs=Array.from(document.querySelectorAll('[data-step]'));
+function selectStep(tab,focus=false){tabs.forEach(item=>{const active=item===tab;item.setAttribute('aria-selected',String(active));item.tabIndex=active?0:-1;document.getElementById(item.getAttribute('aria-controls')).hidden=!active;});if(focus)tab.focus();}
+tabs.forEach((tab,index)=>{tab.addEventListener('click',()=>selectStep(tab));tab.addEventListener('keydown',event=>{let next=index;if(event.key==='ArrowRight'||event.key==='ArrowDown')next=(index+1)%tabs.length;else if(event.key==='ArrowLeft'||event.key==='ArrowUp')next=(index-1+tabs.length)%tabs.length;else if(event.key==='Home')next=0;else if(event.key==='End')next=tabs.length-1;else return;event.preventDefault();selectStep(tabs[next],true);});});
+const views=document.querySelectorAll('[data-view]');
+views.forEach(button=>button.addEventListener('click',()=>{const view=button.dataset.view;views.forEach(item=>item.setAttribute('aria-pressed',String(item===button)));const regional=view!=='all';document.getElementById('kpi-cost').textContent=regional?'€2.4M':'€8.6M';document.getElementById('kpi-assets').textContent=regional?'128':'412';document.getElementById('chart-view').hidden=view==='asset';document.getElementById('asset-view').hidden=view!=='asset';const heights=regional?[32,48,38,65,49,72,57,68]:[48,62,55,79,65,88,71,85];document.querySelectorAll('.bar').forEach((bar,index)=>bar.style.height=heights[index]+'%');document.getElementById('cost-chart').setAttribute('aria-label','Illustrative monthly costs for '+(regional?'Europe':'all regions'));}));
+document.getElementById('year').textContent=new Date().getFullYear();
+if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){document.querySelectorAll('animateMotion').forEach(animation=>animation.remove());}
+</script>
 </body>
 </html>
-
